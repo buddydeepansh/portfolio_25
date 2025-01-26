@@ -1,0 +1,52 @@
+@import "../../variables.less";
+.HeaderRoot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5vh;
+  position: sticky;
+  .leftSide {
+    a {
+      font-size: 36px;
+    }
+    a:hover {
+      color: #aeaeae;
+      cursor: pointer;
+    }
+  }
+  .rightSide {
+    display: flex;
+    gap: 20px;
+    .contactBtn,
+    .resumeBtn {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #ffffff;
+      font-size: 20px;
+      padding: 10px 20px;
+      border-radius: 14px;
+      &:hover {
+        color: #aeaeae;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media screen and (max-width: @mobile_width) {
+  .HeaderRoot {
+    justify-content: space-between;
+    margin-top: 3vh;
+    .leftSide a {
+      font-size: 20px;
+    }
+    .rightSide {
+      gap: 4px;
+      .contactBtn,
+      .resumeBtn {
+        padding: 4px 7px;
+        font-size: 13px;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import "../../variables.less";
+.SkillsRoot {
+  border-top: 2px solid #aeaeae;
+  border-bottom: 2px solid #aeaeae;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin-top: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 80px;
+  align-items: center;
+  justify-content: center;
+  .skill {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    .skillText {
+      font-size: 26px;
+    }
+  }
+}
+
+@media screen and (max-width: @mobile_width) {
+  .SkillsRoot {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin-top: 5vh;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    .skill {
+      gap: 5px;
+      .MuiSvgIcon-root {
+        width: 20px;
+        height: 20px;
+      }
+      .skillText {
+        font-size: 20px;
+        margin: 0;
+      }
+    }
+  }
+}

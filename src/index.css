@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 14px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+@media screen and (max-width: 720px) {
+  body {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
